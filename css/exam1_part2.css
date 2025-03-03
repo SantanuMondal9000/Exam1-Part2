@@ -234,7 +234,7 @@ header a {
 	grid-row-end: 6;
 	z-index: 2;
 	border-radius: 24px;
-	background-image: url("/asset/mobe-thumbnail.png");
+	background-image: url("../asset/mobe-thumbnail.png");
 	background-size: cover;
 	border-top: 25px solid #043F2E;
 
