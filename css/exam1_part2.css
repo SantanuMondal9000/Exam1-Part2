@@ -1,0 +1,293 @@
+/* Reset part */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: NoticiaTextBold;
+	src: url("../asset/NoticiaText-Bold.woff");
+}
+
+@font-face {
+	font-family: WorkSansMedium;
+	src: url("../asset/WorkSans-Medium.woff");
+}
+
+@font-face {
+	font-family: WorkSansRegular;
+	src: url("../asset/WorkSans-Regular.woff");
+}
+
+@font-face {
+	font-family: WorkSansSemiBold;
+	src: url("../asset/WorkSans-SemiBold.woff");
+}
+
+body {
+	font-family: WorkSansRegular;
+	background-color: #043F2E;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* End Reset part */
+/* Default part */
+.primary-anchor {
+	padding: 15px 35px;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	text-transform: initial;
+}
+
+/* End Default part */
+
+/* Header part */
+header a {
+	text-transform: capitalize;
+	font-size: 0.9rem;
+}
+
+.learmore-popup {
+	background-color: #C8F169;
+	text-align: center;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+.learmore-popup p {
+	color: #043F2E;
+	margin: 0 auto;
+}
+
+.cross-btn {
+	margin-right: 20px;
+}
+
+.learmore-popup a {
+	color: #043F2E;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: white;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.logo-menu {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.login {
+	width: 40%;
+
+}
+
+.nav-menu ul {
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-menu ul li a {
+	padding: 15px;
+	color: #043F2E;
+}
+
+.login ul li a {
+	border: 1px solid #043F2E;
+	padding: 15px 35px;
+	border-radius: 5px;
+}
+
+.login ul li a:hover {
+	background-color: #043F2E;
+	color: #C8F169;
+}
+
+.login-active {
+	background-color: #043F2E;
+	color: #C8F169 !important;
+}
+
+.login-btns-list {
+	justify-content: end;
+
+}
+
+.login ul {
+	gap: 20px;
+}
+
+/* Banner area */
+.banner {
+	padding: 80px 0;
+}
+
+.banner-wrapper {
+	position: relative;
+}
+
+.design-area {
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	grid-gap: 20px;
+	height: 100vh;
+
+}
+
+.item {
+	/* border: 1px solid black; */
+	padding: 15px;
+}
+
+.subdiv {
+	background-color: #C8F169;
+	min-height: 100%;
+}
+
+.item1 {
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	z-index: 1;
+	background-color: #C8F169;
+	border-radius: 24px;
+
+}
+
+.item1 h1 {
+	font-family: NoticiaTextBold;
+	font-size: 5rem;
+}
+
+.item2 {
+	grid-column-start: 10;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	z-index: 2;
+	padding: 25px;
+	padding-top: 0;
+	padding-bottom: 15px;
+	background-color: #043F2E;
+	border-radius: 10px;
+
+}
+
+.item2-wrapper {
+	background-color: #2A6B2C;
+	color: #C8F169;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.item2-wrapper a {
+	color: #C8F169;
+	position: relative;
+}
+
+.drop-icon {
+	margin-right: 3px;
+}
+
+.item2-wrapper img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.item3 {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 6;
+	z-index: 2;
+	border-radius: 24px;
+	background-image: url("/asset/mobe-thumbnail.png");
+	background-size: cover;
+	border-top: 25px solid #043F2E;
+
+
+
+}
+
+.item5 {
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	z-index: 4;
+	background-color: #C8F169;
+	border-left: 24px solid #043F2E;
+	border-radius: 24px;
+}
+
+.item4 {
+	grid-row-start: 4;
+	grid-row-end: 6;
+	grid-column-start: 6;
+	grid-column-end: 12;
+	color: white;
+}
+
+.item4 ul {
+	margin-top: 30px;
+	gap: 15px;
+}
+
+.item4 a:hover {
+	background-color: white;
+	color: #043F2E;
+}
+
+/* End Design area */
+h1 {
+	font-size: 5.5rem;
+	font-family: NoticiaTextBold;
+}
+
+.heading {
+	padding: 15px;
+	background-color: #C8F169;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+
+}
+
+.heading2 {
+	top: 140px;
+	left: 32%;
+}

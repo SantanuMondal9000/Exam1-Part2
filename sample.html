@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        border: 1px solid black;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .box2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: 1;
+        outline: 10px solid white;
+    }
+
+    .box3 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        text-align: right;
+        border-radius: 20px;
+    }
+
+    .box4 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .box5 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        z-index: 1;
+        outline: 10px solid white;
+    }
+
+    .box6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+
+    }
+
+    .wrapper {
+        background-color: #fff4e6;
+    }
+
+    .box {
+        background-color: #e4e2df;
+        padding: 1em;
+        color: #d9480f;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="box box1">One</div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box5">Five</div>
+        <div class="box box6">Six</div>
+    </div>
+</body>
+
+</html>
